@@ -49,7 +49,7 @@
     <div class="col-3 general-radius-sm shadow m-3 p-1">
         <center>
             <h5>Lợi Nhuận</h5>
-            <h4 style="color:orangered">{{number_format($money->deposit + ($money->refferal)*2 - $cost - $money->balance - $money->pending - $money->withdraw)}}đ</h4>
+            <h4 style="color:orangered">{{number_format(abs($money->deposit + ($money->refferal)*2 - $cost - $money->balance - $money->pending - $money->withdraw))}}đ</h4>
         </center>
     </div>  
     <div class="col-3 general-radius-sm shadow m-3 p-1">

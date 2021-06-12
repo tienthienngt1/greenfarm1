@@ -49,6 +49,20 @@ class ShopController extends Controller
 
     public function handleBuy($request)
     {
+        // CHECK REQUIRE
+        if($request->_id == 5){
+            if(\Auth::user()->permission->dog2 == 0){
+                Session::flash('error', 'Bạn chưa mua Chó Cấp 2!');
+                return;
+            }
+        }
+        if($request->_id == 7){
+            if(\Auth::user()->permission->bird2 == 0){
+                Session::flash('error', 'Bạn chưa mua Chim Cấp 2!');
+                return;
+            }
+        }
+
         $shop = $this->shop($request->_id);
         $nameper = $request->_namepermission;
         if ($shop === null || empty($nameper)) {
