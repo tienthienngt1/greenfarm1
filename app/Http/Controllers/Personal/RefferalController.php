@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Personal;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Cache\CacheController;
+use Cache;
 
 class RefferalController extends Controller
 {
@@ -16,8 +17,17 @@ class RefferalController extends Controller
      */
     public function index()
     {
+        $refferals = Cache::get('refferals');
+        $refferal1 = $refferals->filter(function($refferals){
+            return $refferals->user_ref_1 == \Auth::user()->id;
+        });
+        $refferal2 = $refferals->filter(function($refferals){
+            return $refferals->user_ref_2 == \Auth::user()->id;
+        });
         return view('personal.gioithieu',[
             'historybuys' => $this->historybuyCache(),
+            'refferal1' => $refferal1,
+            'refferal2' => $refferal2,
         ]);
     }
 
