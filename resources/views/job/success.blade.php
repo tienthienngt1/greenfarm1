@@ -72,9 +72,9 @@
       style="font-size:18px; color:orangered; opacity:0.8">{{number_format($sh -> profit * $sh->time)}}đ</span>
     </center>
     <div class="col-12 mb-2 mt-2" id="_button">
-      <div class="btn-block btn-outline-orange btn" style="opacity: 0.6;">
-        Đã hoàn thành
-      </div>
+      <center>
+        <h2 style="color:green"><i class="fa fa-check-circle"></i> Hoàn Thành</h2>
+      </center>
     </div>
     <span style="opacity:0.8; " class="ml-5">{{$ush->created_at}}</span>
   </div>

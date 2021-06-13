@@ -16,12 +16,13 @@
             <a href="?balance=1&a=sodu" class="btn btn-outline-dark">BALANCE</a>
     </div>
     <div class="card-body">
-        <div class="table-responsive-lg">
+        <div class="table-responsive">
             <table class="table table-sm  table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">USER_ID</th>
                         <th scope="col">EMAIL</th>
+                        <th scope="col">NAME</th>
                         <th scope="col">BALANCE</th>
                         <th scope="col">DEPOSIT</th>
                         <th scope="col">REFFERAL</th>
@@ -50,6 +51,7 @@
                     <tr>
                         <td>{{$money -> user_id}}</td>
                         <td>{{$money -> user->email}}</td>
+                        <td>{{$money -> user->name}}</td>
                         <td>{{number_format($money -> balance)}}đ</td>
                         <td>{{number_format($money -> deposit)}}đ</td>
                         <td>{{number_format($money -> refferal)}}đ</td>

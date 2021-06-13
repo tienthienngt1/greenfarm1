@@ -51,8 +51,8 @@
         <div class="card m-2 p-3" style="display:none;font-size:19px" id="gioithieu">
             <ul>
                 <li>Hệ thống đa dạng với hai tầng giới thiệu.</li>
-                <li>Khi tầng 1 mua bất cứ con vật nào trong cửa hàng thì bạn sẽ nhận được 10% lợi nhuận từ con vật đó.
-                    Tương tự tầng 2 sẽ được 5%.</li>
+                <li>Khi tầng 1 mua bất cứ con vật nào trong cửa hàng thì bạn sẽ nhận được 7% tổng lợi nhuận từ con vật đó.
+                    Tương tự tầng 2 sẽ được 4%.</li>
                 <li>Tiền giới thiệu sẽ được cộng trực tiếp vào tài khoản chính. Thống kê tổng tiền giới thiệu sẽ có
                     trong mục tiền giới thiệu.</li>
                 <li>Bạn có thể xem lịch sử của người giới thiệu trong mục Cá Nhân-> Thống Kê Giới Thiệu.</li>

@@ -91,7 +91,7 @@
             <div class="col-3 general">
                 <center>
                     <div>
-                        <span style="color:orangered">{{number_format(abs(-$deposit - ($refferal)*2 + $cost + $balance + $pending + $withdraw))}}đ</span>
+                        <span style="color:orangered">{{number_format(abs(-$deposit  + $cost + $balance + $pending + $withdraw))}}đ</span>
                     </div>
                     <div>
                         Tổng lợi nhuận
