@@ -46,6 +46,10 @@
                 <p>
                     Mã giới thiệu: {{$user->refferal->refferal}}
                 </p>
+                <p>
+                    Link giới thiệu:<input type="text" id="ref" style="width:280px; border:none; background:none; color:green" value="greenfarm1.online/register?ref={{$user->refferal->refferal}}"  />
+                    <button onclick="copy()" class="btn btn-outline-dark">Copy</button>
+                </p>
                 @if($user->email_verified_at)
                 <span style="color:green">
                 <i class="fas fa-check-square"></i> Đã kích hoạt
@@ -178,4 +182,13 @@
         <!-- ======================= -->
     </div>
 
+<script>
+function copy() {
+    var text = document.getElementById("ref");
+    text.select();
+    text.setSelectionRange(0, 99999); /* For mobile devices */
+    document.execCommand("copy");
+    alert("copied");
+}
+</script>
     @endsection
